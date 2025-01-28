@@ -12,75 +12,60 @@ node --test
 */
 
 //add function
+// add function
 const add = (a, b) => {
-  //ex: add(3,5) should return 5
-  //write your code here
-  return; //return the result
+  return a + b; // Return sum
 };
 
-//subtract function
+// subtract function
 const subtract = (a, b) => {
-  //ex: subtract(5,9) should return -4
-  //write your code here
-  return; //return the result
+  return a - b; // Return difference
 };
 
-//multiply function
+// multiply function
 const multiply = (a, b) => {
-  //ex: multiply (12, 9) should return 108
-  //write your code here
-  return; //return the result
+  return a * b; // Return product
 };
 
-//divide function
+// divide function
 const divide = (a, b) => {
-  //ex: divide(55, 5) should return 11
-  //Make sure to test for zero division should throw and error
-  //write your code here
-  return; //return the result
+  if (b === 0) {
+    throw new Error("Division by zero is not allowed"); // Handle division by zero
+  }
+  return a / b; // Return quotient
 };
 
-//modulas function
+// modulus function
 const modulas = (a, b) => {
-  //ex: modulas(17,4) should return 1
-  //write your code here
-  return; //return the result
+  return a % b; // Return remainder
 };
 
-//power function
+// power function
 const power = (a, b) => {
-  //ex: power(2, 5) should return 32
-  //write your code here
-  return; //return the result
+  return Math.pow(a, b); // Return a raised to the power of b
 };
 
-//square function
+// squareRoot function
 const squareRoot = (a) => {
-  //Make sure that squareRoot a negative number should throw an error
-  //ex: squareRoot(25) should return 5
-  //write your code here
-  return; //return the result
+  if (a < 0) {
+    throw new Error("Cannot calculate square root of a negative number"); // Handle negative numbers
+  }
+  return Math.sqrt(a); // Return square root
 };
 
-//floor function
+// floor function
 const floor = (a) => {
-  //ex: floor(15.3) should return 15
-  //write your code here
-  return; //return the result
+  return Math.floor(a); // Return largest integer <= a
 };
 
-//ceiling function
+// ceiling function
 const ceiling = (a) => {
-  //ex: ceiling(15.3) should return 16
-  //write your code here
-  return; //return the result
+  return Math.ceil(a); // Return smallest integer >= a
 };
 
 ////////////////////////////////////////
 
 //export functions
-//Please do not change the following line.
-
 module.exports = {
   add,
   subtract,
